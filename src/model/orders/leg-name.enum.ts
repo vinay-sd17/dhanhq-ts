@@ -1,0 +1,5 @@
+export enum LegName {
+  ENTRY_LEG = "ENTRY_LEG",
+  TARGET_LEG = "TARGET_LEG",
+  STOP_LOSS_LEG = "STOP_LOSS_LEG"
+}

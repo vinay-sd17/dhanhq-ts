@@ -1,0 +1,8 @@
+export enum OrderStatus {
+  TRANSIT = "TRANSIT",
+  PENDING = "PENDING",
+  REJECTED = "REJECTED",
+  CANCELLED = "CANCELLED",
+  TRADED = "TRADED",
+  EXPIRED = "EXPIRED"
+}

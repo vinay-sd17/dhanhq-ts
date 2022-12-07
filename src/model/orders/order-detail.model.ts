@@ -1,0 +1,43 @@
+import {OrderStatus} from "./order-status.enum";
+import {TransactionType} from "./transaction-type.enum";
+import {ExchangeSegment} from "./exchange-segment.enum";
+import {ProductType} from "./product-type.enum";
+import {Validity} from "./validity.enum";
+import {OrderType} from "./order-type.enum";
+import {LegName} from "./leg-name.enum";
+import {DrvOptionType} from "./drv-option-type.enum";
+import {AmoTime} from "./amo-time.enum";
+
+export class OrderDetail {
+  dhanClientId: string;
+  orderId: number;
+  exchangeOrderId: number;
+  correlationId: string;
+  orderStatus: OrderStatus;
+  transactionType: TransactionType;
+  exchangeSegment: ExchangeSegment;
+  productType: ProductType;
+  orderType: OrderType;
+  validity: Validity;
+  tradingSymbol: string;
+  securityId: string;
+  quantity: number;
+  disclosedQuantity: number;
+  price: number;
+  triggerPrice: number;
+  afterMarketOrder: boolean;
+  boProfitValue: number;
+  boStopLossValue: number;
+  legName: LegName;
+  createTime: string;
+  updateTime: string;
+  exchangeTime: string;
+  drvExpiryDate: string;
+  drvOptionType: DrvOptionType;
+  drvStrikePrice: number;
+  omsErrorCode: string;
+  omsErrorDescription: string;
+  filled_qty: number;
+  algoId: number;
+  amoTime: AmoTime;
+}
