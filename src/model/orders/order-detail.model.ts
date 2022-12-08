@@ -1,12 +1,12 @@
 import {OrderStatus} from "./order-status.enum";
 import {TransactionType} from "./transaction-type.enum";
-import {ExchangeSegment} from "./exchange-segment.enum";
-import {ProductType} from "./product-type.enum";
 import {Validity} from "./validity.enum";
 import {OrderType} from "./order-type.enum";
 import {LegName} from "./leg-name.enum";
-import {DrvOptionType} from "./drv-option-type.enum";
 import {AmoTime} from "./amo-time.enum";
+import {ExchangeSegment} from "../common/exchange-segment.enum";
+import {ProductType} from "../common/product-type.enum";
+import {DrvOptionType} from "../common/drv-option-type.enum";
 
 export class OrderDetail {
   dhanClientId: string;

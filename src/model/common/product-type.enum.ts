@@ -3,5 +3,6 @@ export enum ProductType {
   INTRADAY = "INTRADAY",
   MARGIN = "MARGIN",
   CO = "CO",
-  BO = "BO"
+  BO = "BO",
+  MTF = "MTF"
 }
