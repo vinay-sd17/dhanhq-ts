@@ -4,12 +4,13 @@ import {Orders} from "./modules/orders";
 import {Portfolio} from "./modules/portfolio";
 import {Edis} from "./modules/edis";
 import {Funds} from "./modules/funds";
+import {HistoricalData} from "./modules/historical-data";
 
 class DhanHqClient extends Base {}
 // Attach All client Lib
-interface DhanHqClient extends Orders, Portfolio, Edis, Funds {}
+interface DhanHqClient extends Orders, Portfolio, Edis, Funds, HistoricalData {}
 //Apply Mixins
-applyMixins(DhanHqClient, [Orders, Portfolio, Edis, Funds]);
+applyMixins(DhanHqClient, [Orders, Portfolio, Edis, Funds, HistoricalData]);
 //Export client
 export default DhanHqClient;
 
@@ -40,3 +41,7 @@ export {EdisStatusInquiryDetails} from "./model/edis/edis-status-inquiry-details
 export {EdisTpinResponse} from "./model/edis/edis-tpin-response.model"
 
 export {FundLimitDetails} from "./model/funds/fund-limit-details.model"
+export {Instrument} from "./model/common/instrument.enum"
+export {HistoricalDataResponse} from "./model/historical-data/historical-data-response.model"
+export {DailyHistoricalDataRequest} from "./model/historical-data/daily-historical-data-request.model"
+export {IntradayHistoricalDataRequest} from "./model/historical-data/intraday-historical-data-request.model"

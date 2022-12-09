@@ -27,3 +27,7 @@ const client: DhanHqClient = new DhanHqClient({
 const orderDetail = await client.getOrderById(orderId);
 
 ```
+
+# Available API Interface in client are:
+
+![Alt text](./docs/api_interface.png?raw=true "Api Interface")
