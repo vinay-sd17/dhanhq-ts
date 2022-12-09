@@ -3,12 +3,13 @@ import {applyMixins} from "./utils";
 import {Orders} from "./modules/orders";
 import {Portfolio} from "./modules/portfolio";
 import {Edis} from "./modules/edis";
+import {Funds} from "./modules/funds";
 
 class DhanHqClient extends Base {}
 // Attach All client Lib
-interface DhanHqClient extends Orders, Portfolio, Edis {}
+interface DhanHqClient extends Orders, Portfolio, Edis, Funds {}
 //Apply Mixins
-applyMixins(DhanHqClient, [Orders, Portfolio, Edis]);
+applyMixins(DhanHqClient, [Orders, Portfolio, Edis, Funds]);
 //Export client
 export default DhanHqClient;
 
@@ -37,3 +38,5 @@ export {Exchange} from "./model/common/exchange.enum"
 export {EdisTpinRequest} from "./model/edis/edis-tpin-request.model"
 export {EdisStatusInquiryDetails} from "./model/edis/edis-status-inquiry-details.model"
 export {EdisTpinResponse} from "./model/edis/edis-tpin-response.model"
+
+export {FundLimitDetails} from "./model/funds/fund-limit-details.model"

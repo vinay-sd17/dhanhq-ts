@@ -9,4 +9,5 @@ export class Routes {
   static EDIS: string = "/edis"
   static EDIS_FORM: string = "/edis/form"
   static EDIS_INQUIRE_ISIN: string = "/edis/inquire/isin"
+  static FUND_LIMIT: string = "/fundlimit"
 }
