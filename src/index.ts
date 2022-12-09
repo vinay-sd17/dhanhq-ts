@@ -2,12 +2,13 @@ import {Base} from "./base";
 import {applyMixins} from "./utils";
 import {Orders} from "./modules/orders";
 import {Portfolio} from "./modules/portfolio";
+import {Edis} from "./modules/edis";
 
 class DhanHqClient extends Base {}
 // Attach All client Lib
-interface DhanHqClient extends Orders, Portfolio {}
+interface DhanHqClient extends Orders, Portfolio, Edis {}
 //Apply Mixins
-applyMixins(DhanHqClient, [Orders, Portfolio]);
+applyMixins(DhanHqClient, [Orders, Portfolio, Edis]);
 //Export client
 export default DhanHqClient;
 
@@ -31,3 +32,8 @@ export {PositionType} from "./model/portfolio/position-type.enum"
 
 export {DhanEnv} from "./model/dhan-env.enum"
 export {DhanHqConfig} from "./model/dhanhq-config.model"
+
+export {Exchange} from "./model/common/exchange.enum"
+export {EdisTpinRequest} from "./model/edis/edis-tpin-request.model"
+export {EdisStatusInquiryDetails} from "./model/edis/edis-status-inquiry-details.model"
+export {EdisTpinResponse} from "./model/edis/edis-tpin-response.model"
