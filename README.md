@@ -1,23 +1,24 @@
-# DhanHQ API NodeJs client
+# DhanHQ API NodeJs client (Typescript)
 
 ## Requirements
 
 - NodeJS v12.20.0+
+- Typescript v4.9.0+
 
 ## Installation
 
 Install via [npm](https://www.npmjs.com/package/kiteconnect)
 
-    npm install dhan-hq-client
+    npm install dhanhq-ts
 
 Or via Yarn
 
-    yarn add dhan-hq-client
+    yarn add dhanhq-ts
 
 ## Getting started with API
 
 ```javascript
-import DhanHqClient from "dhan-hq-client";
+import DhanHqClient from "dhanhq-ts";
 
 const client: DhanHqClient = new DhanHqClient({
   accessToken: ACCESS_TOKEN,
