@@ -40,4 +40,7 @@ export class OrderDetail {
   filled_qty: number;
   algoId: number;
   amoTime: AmoTime;
+  exchangeTradeId: string;
+  tradedQuantity: number;
+  tradedPrice: number;
 }
